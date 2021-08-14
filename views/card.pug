@@ -1,0 +1,18 @@
+doctype html
+head
+  script(src='vendor/socket/socket.io.min.js')
+  script(src='vendor/PHASER.min.js')
+body
+  div(id='phaser')
+  label(for='name') Your name: 
+  input(name='name' id='name' value=name)
+  hr
+  div Players: 
+    span(id='players')
+  hr
+  button(id='restart') restart
+  a(href='/waiting') exit
+
+  script(src='js/rarefy.js')
+  script(src='js/io.js')
+  script(src='js/game.js')
